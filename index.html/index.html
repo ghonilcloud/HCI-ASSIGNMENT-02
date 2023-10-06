@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 780px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        body, h2 {
+            color: white;
+        }
+        body {
+            background-image: url('background.jpg');
+        }       
+        th, td {
+            background-color: #ffffff;
+            color: black
+        }
+        </style>
+        </head>
+        <body style="background-color:rgb(21, 44, 160);">
+        
+        <title>HCI ASSIGNMENT-02</title>
+        <H1>HCI ASSIGNMENT-02</H1>
+        <H1>Oneal's Travel Agency</H1>
+        
+        <div class="row">
+          <div class="column" style="background-color:#507ab8;">
+            <h2>Your Information</h2>
+            <form>
+                <fieldset>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <br>
+                    <br>
+                    <label for="fore_name">Fore Name:</label>
+                    <input type="text" id="fore_name" name="fore_name">
+                    <br>
+                    <br>
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality">
+                    <br>
+                    <br>
+                    <label for="pax">Total Pax:</label>
+                    <input type="text" id="pax" name="pax">
+                    <br>
+                    <br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </fieldset>
+                <h2>Choose your Travelling Experience</h2>
+                <fieldset>
+                    <label for="package">Package(s):</label><br>
+                    <input type="checkbox" id="indonesia" name="indonesia" value="Indonesia">
+                    <label for="indonesia"> Indonesia</label><br>
+                    <input type="checkbox" id="malaysia" name="malaysia" value="Malaysia">
+                    <label for="malaysia"> Malaysia</label><br>
+                    <input type="checkbox" id="singapore" name="singapore" value="Singapore">
+                    <label for="singapore"> Singapore</label><br>
+                    <input type="checkbox" id="brunei" name="brunei" value="Brunei">
+                    <label for="brunei"> Brunei</label>
+                    <br>
+                    <br>
+                    <label for="transport">Transportation:</label><br>
+                    <input type="radio" id="shuttle" name="shuttle" value="1">
+                    <label for="age1">Shuttle</label><br>
+                    <input type="radio" id="toyota" name="toyota" value="1">
+                    <label for="age2">Toyota Alphard</label><br>  
+                    <input type="radio" id="honda" name="honda" value="1">
+                    <label for="age3">Honda Oddyssey</label><br>
+                    <input type="radio" id="benz" name="benz" value="1">
+                    <label for="age3">Mercedes-Benz V-Class</label>
+                    <br>
+                    <br>
+                    <label for="destination">Prioritised Destinations:</label>
+                    <input type="text" id="destination" name="destination">
+                    <br>
+                    <br>
+                    <label for="requests">Personal requests:</label>
+                    <input type="text" id="requests" name="requests">
+                    <br>
+                    <br>
+                    <label for="medical">Declare any medical conditions/allergies:</label>
+                    <input type="text" id="medical" name="medical">
+                </fieldset>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+          </div>
+          <div class="column" style="background-color:#507ab8;">
+            <h2>Our Travelling Packages</h2>
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Hotel</th>
+                    <th>Destinations</th>
+                    <th>Transportation</th>
+                    <th>Total pax</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Indonesia</td>
+                    <td>Jakarta Ritz-Carlton</td>
+                    <td>National Monument, Grand Indonesia, Istiqlal Mosque, Ancol Dreamland, Thousand Islands, etc</td>
+                    <td>Shuttle or Personal Car</td>
+                    <td>10</td>
+                    <td rowspan="3">$2000</td>
+                </tr>
+                <tr>
+                    <td>Malaysia</td>
+                    <td>Kuala Lumpur Langham Hotel</td>
+                    <td>Petronas Towers, Lake Gardens, Rapunzel Tower, Batu Caves, Jalan Alor, etc</td>
+                    <td>Shuttle or Personal Car</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Singapore</td>
+                    <td>Singapore Mandarin Oriental</td>
+                    <td>Marina Bay Sands, Gardens by the Bay, Sightseeing Tour Bus, Bike Tour, River Cruise, ArtScience Museum, etc</td>
+                    <td>Shuttle or Personal Car</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Brunei</td>
+                    <td>The Empire Brunei</td>
+                    <td>Omar Ali Saifuddien Mosque, Istana Nurul Iman, Jame'Asr Hassanil Bolkiah Mosque, Royal Regalia Museum, etc</td>
+                    <td>Shuttle or Personal Car</td>
+                    <td>10</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td colspan="6">Note: Multiple travel packages can be chosen, however there will be a 1 month gap between itenieraries.</td>
+                </tr>
+              </table>
+              <br>
+              <h2>Personal Car Options</h2>
+              <table>
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Features</th>
+                    <th>Total Seats</th>
+                    <th>Total Range</th>
+                    <th>Cost per day</th>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>Alphard</td>
+                    <td>Sunroof, Sunshade, Power Adjustable Seats, Dual-zone Climate Control, Rear Air-con, Keyless start, Navigation, etc</td>
+                    <td>7</td>
+                    <td>750-900 Kilometers</td>
+                    <td rowspan="2">$100</td>
+                </tr>
+                <tr>
+                    <td>Honda</td>
+                    <td>Odyssey</td>
+                    <td>Heated and Power-adjustable seats, Magic-Slide 2nd row seats, Apple CarPlay and Android Auto, Power Tailgate, CabinWatch, Front and Rear entertainment system, Blind Spot Information System, etc</td>
+                    <td>8</td>
+                    <td>724 Kilometers</td>
+                </tr>
+                <tr>
+                    <td>Mercedes-Benz</td>
+                    <td>V-Class</td>
+                    <td>Keyless Entry, Heated and Power-adjustable seats, Automatic Climate Control, Cruise Control, Height-Adjustable driver's seat, Central Locking, Anti-Theft Device, Engine Immobilizer, etc</td>
+                    <td>7</td>
+                    <td>1497 Kilometers</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td colspan="6">Note: Only one car option can be chosen for a travelling package, fuel will be paid for by the travel agency.</td>
+                </tr>
+              </table>
+          </div>
+        </div>
+        
+        </body>
+        </html>
